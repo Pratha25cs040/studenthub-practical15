@@ -1,0 +1,17 @@
+# Environment & Secrets
+/.env
+*.log
+
+# Backups & Temporary Archives
+_backup_initial/
+*.tmp
+*.bak
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE settings
+.vscode/
+.idea/

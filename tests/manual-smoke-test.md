@@ -1,0 +1,13 @@
+# Manual smoke test
+- [ ] Apache and MySQL start without errors.
+- [ ] SQL imports successfully.
+- [ ] Home page opens.
+- [ ] Demo admin can log in.
+- [ ] Admin can add a student.
+- [ ] AJAX search filters the student table.
+- [ ] Admin can create an event.
+- [ ] New student can register and log in.
+- [ ] Student can register for an event.
+- [ ] Student cannot open the admin student page.
+- [ ] Logout returns to public home.
+- [ ] Layout remains usable at 375px viewport width.

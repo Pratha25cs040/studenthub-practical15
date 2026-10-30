@@ -1,0 +1,34 @@
+# =====================================================================
+# StudentHub Practical 15 — Apache Virtual Host Configuration
+# Place this block at the end of C:\xampp\apache\conf\extra\httpd-vhosts.conf
+# =====================================================================
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@studenthub.local
+    ServerName studenthub.local
+    ServerAlias www.studenthub.local
+    DocumentRoot "C:/xampp/htdocs/StudentHub_Practical15"
+
+    <Directory "C:/xampp/htdocs/StudentHub_Practical15">
+        Options Indexes FollowSymLinks MultiViews
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    # Custom Logging
+    ErrorLog "logs/studenthub-error.log"
+    CustomLog "logs/studenthub-access.log" combined
+</VirtualHost>
+
+# =====================================================================
+# Host Resolution Instructions for Windows
+# =====================================================================
+# 1. Open Notepad as Administrator (Right click Notepad -> Run as Administrator).
+# 2. Open file: C:\Windows\System32\drivers\etc\hosts
+# 3. Add the following line at the end:
+#    127.0.0.1 studenthub.local
+# 4. Save the file.
+# 5. Open C:\xampp\apache\conf\httpd.conf and ensure this line is NOT commented out:
+#    Include conf/extra/httpd-vhosts.conf
+# 6. Restart Apache in XAMPP Control Panel.
+# 7. Visit: http://studenthub.local/ in your web browser.
