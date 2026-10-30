@@ -6,6 +6,7 @@
 _backup_initial/
 *.tmp
 *.bak
+*.zip
 
 # OS specific files
 .DS_Store
